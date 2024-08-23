@@ -53,7 +53,7 @@ const ArticleCard = ({ article }) => (
 const LatestArticles = () => {
   return (
     <div className="container mx-auto px-4 mt-20">
-      <h2 className="text-4xl sm:text-3xl md:text-6xl ml-24 text-teal-950 font-bold mb-8">
+      <h2 className="text-4xl sm:text-1xl md:text-6xl ml-24 text-teal-950 sm:ml-1 font-bold mb-8">
         Our Latest Articles
       </h2>
       <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16">
