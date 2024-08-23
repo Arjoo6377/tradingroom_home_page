@@ -17,6 +17,10 @@ Currently, two official plugins are available:
 
 Follow these steps to set up and run the project locally:
 
+## Live Demo
+
+[Visit the live site](https://nex-g-tech-assignment-hqre.vercel.app/)
+
 1. **Clone the Repository**:
 
    - Open your terminal or Git Bash.
