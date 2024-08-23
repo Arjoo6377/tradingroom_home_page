@@ -1,0 +1,10 @@
+/* styles.css */
+.transform-mobile {
+  transform: translateY(40px);
+}
+
+@media (min-width: 1024px) {
+  .transform-lg {
+    transform: translateY(40px);
+  }
+}
