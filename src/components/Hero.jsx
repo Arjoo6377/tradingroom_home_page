@@ -7,7 +7,7 @@ function Hero() {
   return (
     <>
       {/* Fixed Section Above Navbar */}
-      <div className="fixed top-0 left-0 w-full h-12 bg-black text-white flex items-center justify-between px-4 lg:px-6 shadow-md z-50 ">
+      <div className="fixed top-0 left-0 w-full h-12 bg-black text-white flex items-center justify-between px-4 lg:px-6 shadow-md z-50">
         <p className="text-sm">Special Offer</p>
         <button className="bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 text-xs lg:text-base">
           Buy Now
@@ -15,12 +15,11 @@ function Hero() {
       </div>
 
       {/* Hero Section */}
-      <section className="bg-green-100 overflow-x-hidden">
-        {" "}
-        {/* Prevent x-axis overflow */}
+      <section className="bg-green-100 overflow-hidden">
+        {/* Prevent overflow */}
         <div
           className="relative bg-teal-900 text-white flex flex-col justify-between mt-12 lg:mt-0"
-          style={{ minHeight: "60vh", borderRadius: "60px" }}
+          style={{ minHeight: "calc(100vh - 3rem)", borderRadius: "60px" }}
         >
           <Navbar />
           <div className="flex flex-col lg:flex-row justify-between items-center px-6 lg:px-10 py-10 lg:py-20 flex-grow">
@@ -61,7 +60,7 @@ function Hero() {
               <img
                 src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Heros-03.png"
                 alt="Hero"
-                className="relative z-20 rounded-lg w-full max-w-full h-auto transform-mobile lg:transform-lg "
+                className="relative z-20 rounded-lg w-full max-w-full h-auto transform-mobile lg:transform-lg"
               />
               {/* Overlay Image */}
               <img
@@ -69,10 +68,10 @@ function Hero() {
                 alt="Overlay"
                 className="absolute top-0 left-1/2 transform -translate-x-1/2 lg:translate-x-0 lg:left-auto lg:top-auto lg:right-0 lg:bottom-0 rounded-lg z-10"
                 style={{
-                  width: "50%", // Scales with screen size
-                  maxWidth: "300px", // Adjusted maxWidth for larger display on mobile
-                  maxHeight: "250px", // Adjusted height for mobile
-                  transform: "translateY(50px)", // Default transform
+                  width: "50%",
+                  maxWidth: "300px",
+                  maxHeight: "250px",
+                  transform: "translateY(50px)",
                 }}
               />
             </div>

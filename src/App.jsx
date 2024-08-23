@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App overflow-x-hidden">
+    <div className="App overflow-x-hidden overflow-hidden">
       {/* <Navbar /> */}
       <Hero />
       <TradingPage />
