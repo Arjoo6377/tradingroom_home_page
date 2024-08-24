@@ -44,17 +44,17 @@ function First() {
                   <img
                     src="https://traderoom.1onestrong.com/wp-content/uploads/elementor/thumbs/Testimonial-0001-qs6zomruy68vz3v1s53pifpmkh9civej414uj7lrf4.jpg"
                     alt="Member 1"
-                    className="w-10 h-10 lg:w-12 lg:h-12 rounded-full z-30 mr-2 lg:mr-4"
+                    className="w-10 h-10 lg:w-12 lg:h-12 rounded-full z-30 mr-2 lg:mr-4 ring-4 ring-white"
                   />
                   <img
                     src="https://traderoom.1onestrong.com/wp-content/uploads/elementor/thumbs/Testimonial-0002-qs6zolu0rc7lnhwexmp2xxy5z3dzb6asrwhd1xn5lc.jpg"
                     alt="Member 2"
-                    className="w-10 h-10 lg:w-12 lg:h-12 rounded-full z-20 -ml-3 lg:-ml-8"
+                    className="w-10 h-10 lg:w-12 lg:h-12 rounded-full z-20 -ml-3 lg:-ml-8 ring-4 ring-white"
                   />
                   <img
                     src="https://traderoom.1onestrong.com/wp-content/uploads/elementor/thumbs/Testimonial-0003-qs6zonpp50a6aptomnic2xh35v4pqki9g5sc0hkd8w.jpg"
                     alt="Member 3"
-                    className="w-10 h-10 lg:w-12 lg:h-12 rounded-full z-10 -ml-3 lg:-ml-8"
+                    className="w-10 h-10 lg:w-12 lg:h-12 rounded-full z-10 -ml-3 lg:-ml-8 ring-4 ring-white"
                   />
                 </div>
 
@@ -72,7 +72,7 @@ function First() {
                 <img
                   src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Heros-03.png"
                   alt="Overlay"
-                  className="w-auto absolute bottom-0 z-9 h-[300px] md:h-[400px] lg:h-[500px] xl:h-[700px]   lg:ml-64 sm:ml-28"
+                  className="w-auto absolute bottom-0 z-9 h-[295px] md:h-[400px] lg:h-[500px] xl:h-[700px]   lg:ml-64 sm:ml-28"
                 />
                 <img
                   src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-001.png"

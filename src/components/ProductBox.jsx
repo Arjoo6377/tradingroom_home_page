@@ -124,11 +124,11 @@ const ProductBox = () => {
             <div className="flex flex-wrap items-center ml-8">
               <div className="flex justify-center items-center text-green-300">
                 <span className="md:text-2xl  text-xl align-top">$</span>
-                <span className="md:text-7xl text-3xl font-bold">49</span>{" "}
+                <span className="md:text-7xl text-2xl font-bold">49</span>{" "}
                 {/* Larger size before the decimal */}
                 <span className="md:text-2xl text-xl align-top">.99</span>
               </div>
-              <button className="bg-green-500 text-white py-2 px-4 rounded-xl sm:h-10 sm:py-1 sm:px-3 ml-4 mt-2 xs:h-8 xs:py-1 xs:px-2">
+              <button className="bg-green-500 text-white py-2  px-2 rounded-xl sm:h-7 sm:py-1 sm:px-1 ml-4 mt-2 xs:h-8 xs:py-1 xs:px-2">
                 Get Course Now
               </button>
             </div>
