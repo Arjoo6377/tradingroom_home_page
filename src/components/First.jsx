@@ -30,7 +30,7 @@ function First() {
           style={{ minHeight: "calc(100vh - 3rem)", borderRadius: "60px" }}
         >
           <Navbar />
-          <div className="flex flex-col lg:flex-row justify-between items-center px-4 lg:px-10 py-8 lg:py-20 flex-grow">
+          <div className="flex flex-col lg:flex-row justify-between items-center px-4 lg:px-10 py-8 lg:py-20 flex-grow relative z-20">
             <div className="max-w-lg text-center lg:text-left mt-4 lg:mt-0 lg:ml-36">
               <h1 className="text-xl lg:text-4xl xl:text-5xl font-extrabold mb-4 lg:mb-6 leading-tight">
                 Your path to trading <br /> Mastery{" "}
@@ -58,8 +58,8 @@ function First() {
                   />
                 </div>
 
-                <div className="mt-2 lg:mt-0">
-                  <p className="text-xs lg:text-base ml-3 lg:ml-8">
+                <div className="mt-2 lg:mt-0 z-30 relative">
+                  <p className="text-xs lg:text-base ml-3 lg:ml-8 z-30">
                     15,000 Members Joined: Rated Excellent at 9.1/10 from 200
                     Reviews
                   </p>
@@ -67,17 +67,17 @@ function First() {
               </div>
             </div>
 
-            <div className="absolute right-0 bottom-0 flex flex-col items-end lg:items-center lg:pr-10">
+            <div className="absolute right-0 bottom-0 flex flex-col items-end lg:items-center lg:pr-10 z-10">
               <div className="relative">
                 <img
                   src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Heros-03.png"
                   alt="Overlay"
-                  className="w-auto absolute bottom-0 z-9 h-[295px] md:h-[400px] lg:h-[500px] xl:h-[700px]   lg:ml-64 sm:ml-28"
+                  className="w-auto absolute bottom-0 z-0 h-[320px] md:h-[400px] lg:h-[500px] xl:h-[700px] lg:ml-64 sm:ml-28"
                 />
                 <img
                   src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-001.png"
                   alt="Hero"
-                  className="z-10 w-[300px] h-[200px] md:h-[300px] lg:h-[300px] xl:h-[600px] lg:w-[100%] "
+                  className="z-0 w-[300px] h-[200px] md:h-[300px] lg:h-[300px] xl:h-[600px] lg:w-[100%]"
                 />
               </div>
             </div>
