@@ -19,7 +19,7 @@ Follow these steps to set up and run the project locally:
 
 ## Live Demo
 
-[Visit the live site](https://arjoo-nexg-assignment-g9o7hfu16-arjoos-projects.vercel.app/)
+[Visit the live site](https://arjoo-nexg-assignment-bplw.vercel.app/)
 
 1. **Clone the Repository**:
 
