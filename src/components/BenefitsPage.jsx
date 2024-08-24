@@ -1,100 +1,121 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import ProductBox from "./ProductBox";
-import Reviews from "./Reviews";
+import Review from "./Reviews";
 
 const BenefitsPage = () => {
-  const imageRefs = useRef([]);
-
-  useEffect(() => {
-    const options = {
-      root: null, // Use the viewport as the root
-      threshold: 0.1, // Trigger when 10% of the element is visible
-    };
-
-    const handleIntersect = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-fadeInUp");
-          observer.unobserve(entry.target); // Stop observing once the animation is triggered
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, options);
-
-    imageRefs.current.forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => {
-      if (imageRefs.current) {
-        imageRefs.current.forEach((ref) => {
-          observer.unobserve(ref);
-        });
-      }
-    };
-  }, []);
-
   return (
-    <div className="flex flex-col items-center justify-center bg-green-50 p-4 mt-16 md:mt-24 lg:mt-36">
-      <style>{`
-        @keyframes fadeInUp {
-          0% {
-            opacity: 0;
-            transform: translateY(200px);
-          }
-          100% {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fadeInUp {
-          animation: fadeInUp 0.8s ease-out forwards;
-        }
-      `}</style>
-
-      <p className="text-center text-base md:text-lg p-4 md:p-6 rounded mb-4 md:mb-8">
-        <strong className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-600">
+    <div className="bg-green-100 py-10 px-5 md:mt-28 mt-20">
+      <div className="text-center mb-10">
+        <h2 className="text-4xl md:text-5xl font-bold text-gray-800 md:mt-24">
           Benefits of joining our course
-        </strong>
-        <br />
-        <br />
-        <span className="text-gray-400">
+        </h2>
+        <p className="text-gray-500 mt-4 md:mt-10 text-sm md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
           tellus, luctus nec
-          <br /> ullamcorper mattis, pulvinar dapibus leo.
-        </span>
-      </p>
+          <br className="hidden md:block" /> ullamcorper mattis, pulvinar
+          dapibus leo.
+        </p>
+      </div>
 
-      <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-        {[0, 1, 2].map((_, index) => (
-          <div
-            key={index}
-            className="w-80 md:w-72 lg:w-96 h-72 md:h-80 lg:h-96 bg-teal-900 text-white flex rounded shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105"
-            ref={(el) => (imageRefs.current[index] = el)}
-          >
-            <div>
-              <h1 className="text-xl md:text-2xl font-bold text-white mt-4 ml-5">
-                Stocks Trading
+      <div className="flex  justify-between flex-wrap flex-cols-2 gap-4 p-4 md:justify-between items-center md:mt-20 w-full md:w-[50%] mx-auto mb-10">
+        <div className=" md:text-left">
+          <div className="text-4xl md:text-3xl text-teal-900 font-bold">
+            12+
+          </div>
+          <div className="text-gray-500 text-sm md:text-base">
+            New Lessons Weekly
+          </div>
+        </div>
+        <div className=" md:text-left">
+          <div className="text-4xl md:text-3xl text-teal-900 font-bold">
+            50M+
+          </div>
+          <div className="text-gray-500 text-sm md:text-base">Views Videos</div>
+        </div>
+        <div className=" md:text-left">
+          <div className="text-4xl md:text-3xl text-teal-900 font-bold">
+            535K+
+          </div>
+          <div className="text-gray-500 text-sm md:text-base">
+            Total Subscribers
+          </div>
+        </div>
+        <div className=" md:text-left">
+          <div className="text-4xl md:text-3xl text-teal-900 font-bold">
+            2K+
+          </div>
+          <div className="text-gray-500 text-sm md:text-base">
+            Lessons Video
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:mt-5 md:space-y-0 justify-center lg:w-[1700px] mx-auto">
+        {/* First Box */}
+        <div className="w-80 md:w-72 lg:w-[570px] h-96 md:h-80 lg:h-[500px] bg-teal-900 text-white flex flex-col justify-between rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105">
+          <div className="flex flex-col  justify-between h-full">
+            <div className="p-5 md:absolute">
+              <h1 className="text-xl md:text-4xl font-bold text-white mt-10">
+                Discuss charts in <br /> our channels
               </h1>
-              <p className="mt-2 md:mt-4 ml-5 text-gray-300 text-sm md:text-base">
+              <p className="mt-2 md:mt-4 text-gray-300 text-sm md:text-base">
                 Lorem ipsum dolor sit amet <br /> consectetur adipiscing elit
               </p>
-              <p className="ml-5 text-sm md:text-lg mt-1">Learn more</p>
-              <img
-                src={`https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-01${
-                  5 + index
-                }-1.png`}
-                className="w-64 md:w-72 lg:w-80 h-32 md:h-40 lg:h-44 ml-10 md:ml-16 mt-10 md:mt-12 lg:mt-16 mb-2"
-                alt="Stocks Trading"
-              />
+              <p className="text-sm md:text-lg mt-3"> Learn more →</p>
             </div>
+            <img
+              src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-015-1.png"
+              alt="Discuss charts"
+              className="md:w-[60.7%] md:h-[52%] md:relative object-fill  w-52  md:top-60  ml-28 md:ml-56"
+            />
           </div>
-        ))}
+        </div>
+
+        {/* Second Box */}
+        <div className="w-80 md:w-72 lg:w-[530px] h-96 md:h-80 lg:h-[500px] bg-teal-900 text-white flex flex-col justify-between rounded-lg shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105">
+          <div className="flex flex-col justify-between h-full">
+            <div className="p-5">
+              <h1 className="text-xl md:text-4xl font-bold text-white mt-10">
+                Educational videos <br /> Library
+              </h1>
+              <p className="mt-2 md:mt-4 text-gray-300 text-sm md:text-base">
+                Lorem ipsum dolor sit amet consectetur <br></br>odio elit
+                feugiat diam convallis molestie.
+              </p>
+              <p className="text-sm md:text-lg mt-3"> Learn more →</p>
+            </div>
+            <img
+              src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-016-1.png"
+              alt="Exclusive tools"
+              className="md:w-[89%] md:h-[47%] w-52 ml-28 rounded-lg object-fill md:ml-14"
+            />
+          </div>
+        </div>
+
+        {/* Third Box */}
+        <div className="w-80 md:w-72 lg:w-[530px] h-96 md:h-80 lg:h-[500px] bg-teal-900 text-white flex flex-col justify-between rounded-lg  shadow-md hover:bg-teal-700 transition-transform transform hover:scale-105">
+          <div className="flex flex-col justify-between h-full">
+            <div className="p-5">
+              <h1 className="text-xl md:text-4xl font-bold text-white mt-10">
+                Guidance when you
+                <br /> need it
+              </h1>
+              <p className="mt-2 md:mt-4 text-gray-300 text-sm md:text-base">
+                Lorem ipsum dolor sit amet consectetur <br /> odio elit feugiat
+                diam convallis molestie.
+              </p>
+              <p className="text-sm md:text-lg mt-3"> Learn more →</p>
+            </div>
+            <img
+              src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-017.png"
+              alt="Live webinars"
+              className="md:w-[67%] md:h-[46%] object-fill md:ml-44 ml-28 rounded-lg w-52"
+            />
+          </div>
+        </div>
       </div>
       <ProductBox />
-      <Reviews />
+      <Review />
     </div>
   );
 };

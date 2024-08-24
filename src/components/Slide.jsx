@@ -1,5 +1,5 @@
 import React from "react";
-import Services from "./Services";
+// import Services from "./Services";
 
 function Slide() {
   const items = [
@@ -45,17 +45,17 @@ function Slide() {
   `;
 
   return (
-    <section className="bg-green-100 h-full" style={{ height: "100vh" }}>
-      <div className="text-center mx-auto px-4 max-w-screen-xl">
-        <div className="mt-20">
-          <p className="text-lg font-medium">
+    <section className="bg-green-100 h-full" style={{ height: "20vh" }}>
+      <div className="text-center mx-auto  max-w-screen-xl">
+        <div>
+          <p className="text-lg font-medium mt-20 ">
             Collaborated with 800+ trusted worldwide partners
           </p>
         </div>
         <div className="relative overflow-hidden mt-9">
           {/* Inject keyframes animation as a style tag */}
           <style>{animationKeyframes}</style>
-          <div className="flex space-x-4" style={slideAnimation}>
+          <div className="flex space-x-2" style={slideAnimation}>
             {items.map((item) => (
               <div key={item.id} className="flex-shrink-0 mb-4">
                 <img
@@ -68,7 +68,7 @@ function Slide() {
           </div>
         </div>
       </div>
-      <Services />
+      {/* <Services /> */}
     </section>
   );
 }

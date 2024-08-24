@@ -35,11 +35,11 @@ const ArticleCard = ({ article }) => (
         src={article.image}
         alt={article.title}
       />
-      <span className="absolute bottom-4 left-4 bg-white text-teal-900 text-sm font-semibold px-3 py-1">
+      <span className="absolute bottom-0 left-0 bg-white text-teal-900 text-sm rounded-tr-lg font-semibold px-3 py-1">
         {article.category}
       </span>
     </div>
-    <div className="py-4 px-4">
+    <div className="mt-5">
       <div className="font-bold text-2xl mb-2 text-teal-800">
         {article.title}
       </div>
@@ -52,14 +52,16 @@ const ArticleCard = ({ article }) => (
 
 const LatestArticles = () => {
   return (
-    <div className="container mx-auto px-4 mt-20">
-      <h2 className="text-4xl sm:text-1xl md:text-6xl ml-24 text-teal-950 sm:ml-1 font-bold mb-8">
-        Our Latest Articles
-      </h2>
-      <div className="flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-8 sm:gap-12 md:gap-16">
-        {articles.map((article, index) => (
-          <ArticleCard key={index} article={article} />
-        ))}
+    <div className="container mx-auto px-4 mt-20 justify-center bg-white">
+      <div className=" justify-center mx-auto items-center md:ml-24">
+        <h2 className="text-4xl sm:text-1xl md:text-4xl text-teal-950 sm:ml-1 font-bold mb-8">
+          Our Latest Articles
+        </h2>
+        <div className="flex flex-col sm:flex-row sm:flex-wrap items-center  gap-8 sm:gap-12 md:gap-16">
+          {articles.map((article, index) => (
+            <ArticleCard key={index} article={article} />
+          ))}
+        </div>
       </div>
     </div>
   );

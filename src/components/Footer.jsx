@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center gap-4 mt-10 text-left">
           <div className="flex-1 w-full md:w-1/2 lg:w-1/5 px-2">
             <h5 className="font-semibold mb-2 text-2xl">Home</h5>
-            <ul className="text-1xl">
+            <ul className="text-1xl text-gray-500 md:block">
               <li>Home</li>
               <li>Membership</li>
               <li>About</li>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
           <div className="flex-1 w-full md:w-1/2 lg:w-1/5 px-2">
             <h5 className="font-semibold text-2xl mb-2">Services</h5>
-            <ul className="text-1xl">
+            <ul className="text-1xl text-gray-500 md:block">
               <li>Trading Courses</li>
               <li>The Swing Report</li>
               <li>Indicators</li>
@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <div className="flex-1 w-full md:w-1/2 lg:w-1/5 px-2">
             <h5 className="font-semibold mb-2 text-2xl">Products</h5>
-            <ul className="text-1xl">
+            <ul className="text-1xl  text-gray-500 md:block">
               <li>Articles</li>
               <li>Educational Videos</li>
               <li>E-Books & Guides</li>
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
           <div className="flex-1 w-full md:w-1/2 lg:w-1/5 px-2">
             <h5 className="font-semibold mb-2 text-2xl">Resources</h5>
-            <ul className="text-1xl">
+            <ul className="text-1xl text-gray-500 md:block">
               <li>traderoom Blog</li>
               <li>Success Stories</li>
               <li>Terms of Service</li>
@@ -64,12 +64,42 @@ const Footer = () => {
             </ul>
           </div>
           <div className="flex-1 w-full md:w-1/2 lg:w-1/5 px-2">
-            <h5 className="font-semibold mb-2 text-2xl">Contact</h5>
-            <ul className="text-1xl">
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Youtube</li>
-              <li>Instagram</li>
+            <h5 className="font-semibold mb-2 text-2xl hidden md:inline">
+              Contact
+            </h5>
+            <ul className="text-1xl flex md:flex-col gap-2 justify-center">
+              <li className="flex items-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/512px-Facebook_f_logo_%282019%29.svg.png"
+                  alt="Facebook"
+                  className="w-5 h-5 mr-2"
+                />
+                <span className="hidden md:inline">Facebook</span>
+              </li>
+              <li className="flex items-center">
+                <img
+                  src="https://img.icons8.com/?size=100&id=8824&format=png&color=000000"
+                  alt="Twitter"
+                  className="w-5 h-5 mr-2"
+                />
+                <span className="hidden md:inline">Twitter</span>
+              </li>
+              <li className="flex items-center">
+                <img
+                  src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000"
+                  alt="YouTube"
+                  className="w-5 h-5 mr-2"
+                />
+                <span className="hidden md:inline">YouTube</span>
+              </li>
+              <li className="flex items-center">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+                  alt="Instagram"
+                  className="w-5 h-5 mr-2"
+                />
+                <span className="hidden md:inline">Instagram</span>
+              </li>
             </ul>
           </div>
         </div>

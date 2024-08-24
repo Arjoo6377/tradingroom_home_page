@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import TradingChallenge from "./TradingChallenge";
+
+import HeroSection from "./HeroSection";
 
 const FAQSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -37,7 +38,7 @@ const FAQSection = () => {
             <div key={index}>
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full text-left text-2xl font-medium text-gray-500 py-4 border-b border-gray-200 flex justify-between items-center"
+                className="w-full text-left text-xl font-medium text-teal-900 py-2 border-b border-gray-200 flex justify-between items-center"
               >
                 {faq}
                 <span>{activeIndex === index ? "-" : "+"}</span>
@@ -55,12 +56,13 @@ const FAQSection = () => {
         </div>
 
         <div className="text-center mt-8">
-          <button className="bg-teal-900 text-white py-3 px-6  w-full rounded-2xl text-lg flex items-center justify-center mx-auto">
+          <button className="bg-teal-900 text-white py-3 px-6  w-full rounded-xl text-lg flex items-center justify-center mx-auto">
             Explore All FAQ <span className="ml-2">→</span>
           </button>
         </div>
       </section>
-      <TradingChallenge />
+
+      <HeroSection />
     </div>
   );
 };

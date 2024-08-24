@@ -55,26 +55,32 @@ const TradingPage = () => {
     {
       id: 1,
       img: "https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-008.png",
+      title: "Stocks Trading",
     },
     {
       id: 2,
       img: "https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-009.png",
+      title: "Forex Trading",
     },
     {
       id: 3,
       img: "https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-010.png",
+      title: "Cryptos Trading",
     },
     {
       id: 4,
       img: "https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-011-1.png",
+      title: "Stocks Indices",
     },
     {
       id: 5,
       img: "https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-012-1.png",
+      title: "Commodities Trading",
     },
     {
       id: 6,
       img: "https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Icon-013.png",
+      title: "Bonds Trading",
     },
   ];
 
@@ -90,7 +96,7 @@ const TradingPage = () => {
   };
 
   return (
-    <div className="mt-6  lg:mt-16">
+    <div className="mt-[700px] lg:mt-16">
       {" "}
       {/* Adjust margin top for different screen sizes */}
       <div className="relative flex flex-col bg-white lg:flex-row ">
@@ -139,8 +145,8 @@ const TradingPage = () => {
         <h1 className="text-center mb-4 text-5xl font-bold text-gray-600">
           Our trading learning provider
         </h1>
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
+        <div className="flex justify-center bg-white">
+          <div className="grid grid-cols-1 sm:grid-cols-2 bg-white lg:w-[75%] w-[95%] lg:grid-cols-3 gap-6 mt-20">
             {name.map((p, index) => (
               <div
                 key={index}
@@ -149,11 +155,11 @@ const TradingPage = () => {
                   ...fadeInStyle,
                   ...(isVisible ? visibleStyle : {}),
                 }}
-                className="w-96 h-48 bg-gray-100 flex border border-transparent hover:bg-gray-200 hover:border-black shadow-md hover:shadow-lg transition-all"
+                className="relative w-[100%] lg:h-48 h-40 bg-gray-100 flex border rounded-2xl border-transparent hover:bg-gray-200 hover:border-black shadow-md hover:shadow-lg transition-all"
               >
-                <div>
-                  <h1 className="text-2xl font-bold text-gray-700 mt-4 ml-5">
-                    Stocks Trading
+                <div className="flex-1 ">
+                  <h1 className="lg:text-2xl text-xl font-bold text-gray-700 mt-4 lg:mt-6 ml-5">
+                    {p.title}
                   </h1>
                   <p className="mt-4 ml-5">
                     Lorem ipsum dolor sit amet <br /> consectetur adipiscing
@@ -161,8 +167,16 @@ const TradingPage = () => {
                   </p>
                   <img
                     src={p.img}
-                    className="w-20 h-20 ml-72 mb-2"
+                    className=" ml-72 lg:w-24 lg:h-16 w-10 h-10 lg:ml-80 lg:mb-4"
                     alt="Stock Icon"
+                  />
+                </div>
+                {/* Arrow Icon */}
+                <div className="absolute lg:top-6 top-5 lg:ml-96 ml-80">
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/000000/long-arrow-right.png"
+                    alt="Arrow Icon"
+                    className="w-8 h-8"
                   />
                 </div>
               </div>

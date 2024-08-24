@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // State to manage the menu visibility
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -11,13 +11,15 @@ function Navbar() {
   return (
     <nav className="bg-teal-900 text-white p-4 mt-10">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">TRADE ROOM</div>
+        <div className="text-2xl font-bold w-40">
+          <img src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Logo-01-1.png"></img>
+        </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-white">
             {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
         </div>
-        {/* Main navbar content for larger screens */}
+
         <div className="hidden md:flex justify-between items-center w-full">
           <ul className="flex space-x-6 ml-72">
             <li>
@@ -57,7 +59,6 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Dropdown menu for mobile screens */}
       <ul
         className={`md:hidden flex flex-col items-center bg-teal-900 w-full absolute left-0 transition-all duration-300 ease-in ${
           isOpen ? "top-16" : "-top-96"
