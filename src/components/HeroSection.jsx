@@ -4,7 +4,7 @@ function HeroSection() {
   return (
     <div className="bg-black text-white rounded-3xl flex flex-col md:flex-row relative w-[95%] md:w-[85%] h-[600px] md:h-[450px] mx-auto  md:p-0">
       <div className="flex flex-col ml-0 md:ml-36 absolute mt-8 md:mt-8 w-full md:w-[50%] h-[400px] md:h-[300px]">
-        <h2 className="text-4xl md:text-5xl font-bold mb-3 md:mb-4 text-center md:text-left mt-16 leading-snug md:leading-normal">
+        <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 text-center md:text-left mt-16 leading-snug md:leading-normal">
           Apply to Join My <br className="hidden md:block" /> Trading Challenge
         </h2>
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-start mb-4 md:mb-7 mt-4">
@@ -34,7 +34,7 @@ function HeroSection() {
             Join 584700+ traders inside
           </span>
         </div>
-        <button className="bg-green-500 hover:bg-green-600 text-black font-semibold py-2 px-6 w-[80%] md:w-[30%] rounded-full mt-1 mx-auto md:mx-0">
+        <button className="bg-green-500 hover:bg-green-600 text-black font-semibold py-2 px-6 w-[80%] md:w-[70%] rounded-full mt-1 mx-auto md:mx-0">
           Explore Membership →
         </button>
       </div>

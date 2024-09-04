@@ -1,6 +1,6 @@
 import React from "react";
 
-function TradingPage() {
+function Third() {
   const items = [
     {
       id: 1,
@@ -35,7 +35,7 @@ function TradingPage() {
   ];
 
   return (
-    <div className="w-full p-5 mt-[500px] md:mt-0 bg-gray-100">
+    <div className="w-full p-5 bg-gray-100">
       <div className="text-center mb-10">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
           Our Trading Learning Provider
@@ -76,4 +76,4 @@ function TradingPage() {
   );
 }
 
-export default TradingPage;
+export default Third;

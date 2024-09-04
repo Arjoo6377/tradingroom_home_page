@@ -19,31 +19,22 @@ Follow these steps to set up and run the project locally:
 
 ## Live Demo
 
-[Visit the live site](https://arjoo-nexg-assignment-bplw.vercel.app/)
-
 1. **Clone the Repository**:
 
    - Open your terminal or Git Bash.
    - Run the following command to clone the repository to your local machine:
      ```bash
-     git clone https://github.com/Arjoo6377/NexG.Tech.assignment.git
+     git clone https://github.com/Arjoo6377/tradingroom_home_page.git
      ```
 
-2. **Navigate to the Project Directory**:
-
-   - Change into the project directory:
-     ```bash
-     cd NexG.Tech.assignment
-     ```
-
-3. **Install Dependencies**:
+2. **Install Dependencies**:
 
    - Install the required packages by running:
      ```bash
      npm install
      ```
 
-4. **Start the Development Server**:
+3. **Start the Development Server**:
    - Start the development server to view the project in your browser:
      ```bash
      npm run dev
@@ -67,11 +58,3 @@ Follow these steps to set up and run the project locally:
 ## Challenges and Solutions
 
 - **Implementing Animations**: One of the most significant challenges was adding animations to every image while maintaining performance and responsiveness. This was resolved by balancing CSS animations and using React Spring for more complex interactions.
-
-## Deployment
-
-The site is deployed on Vercel. You can view the live application at: [https://your-vercel-site-url.vercel.app](https://your-vercel-site-url.vercel.app).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).

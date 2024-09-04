@@ -9,7 +9,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-teal-900 text-white p-4 mt-10">
+    <nav className="bg-teal-900 text-white p-1 mt-20">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold w-40">
           <img src="https://traderoom.1onestrong.com/wp-content/uploads/2024/08/Logo-01-1.png"></img>
